@@ -1,13 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar'
+import { Button, StyleSheet, Text, View } from 'react-native'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Programming with Mash</Text>
+      <Button
+        title="youtube channel"
+        onPress={'https://www.youtube.com/programmingwi...'}
+      >
+        YOUTUBE CHANNEL
+      </Button>
       <StatusBar style="auto" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -17,4 +23,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
